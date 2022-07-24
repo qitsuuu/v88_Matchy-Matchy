@@ -9,45 +9,12 @@
 
         <script>
             $(document).ready(()=>{
-                $('img.kenma').click(function(){
-                    var altsrc= $(this).attr('data-alt-src');
-                    var src =  $(this).attr('src');
-                    $(this).attr('src', altsrc);
-                    console.log(src);
-                    $(this).click(function(){
-                        $(this).attr('src', src);
-                        altsrc = $(this).attr('data-alt-src');
-                    })
-                })
-                $('img.hinata').click(function(){
-                    var altsrc= $(this).attr('data-alt-src');
-                    var src =  $(this).attr('src');
-                    $(this).attr('src', altsrc);
-                    console.log(src);
-                    $(this).click(function(){
-                        $(this).attr('src', src);
-                        altsrc = $(this).attr('data-alt-src');
-                    })
-                })
-                $('img.suga').click(function(){
-                    var altsrc= $(this).attr('data-alt-src');
-                    var src =  $(this).attr('src');
-                    $(this).attr('src', altsrc);
-                    console.log(src);
-                    $(this).click(function(){
-                        $(this).attr('src', src);
-                        altsrc = $(this).attr('data-alt-src');
-                    })
-                })
-                $('img.bokuto').click(function(){
-                    var altsrc= $(this).attr('data-alt-src');
-                    var src =  $(this).attr('src');
-                    $(this).attr('src', altsrc);
-                    console.log(src);
-                    $(this).click(function(){
-                        $(this).attr('src', src);
-                        altsrc = $(this).attr('data-alt-src');
-                    })
+                $('img').click(function(){
+                    var orig = $(this).attr('src');
+                    var flipped = $(this).attr('data-alt-src');
+                    $(this).attr('src', flipped);
+                    $(this).attr('data-alt-src', orig);
+                    console.log(orig);
                 })
                 $('button.reset').click(()=>{
                     location.reload(true)
@@ -63,40 +30,40 @@
             </header>
             <main class="col-lg-12">
                 <div class="col-lg-3">
-                    <img class="kenma" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Orange_question_mark.svg/2048px-Orange_question_mark.svg.png" data-alt-src="https://www.pngfind.com/pngs/m/410-4102300_haikyuu-clipart-vector-haikyuu-chibi-hd-png-download.png" alt="kenma">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Orange_question_mark.svg/2048px-Orange_question_mark.svg.png" data-alt-src="https://www.pngfind.com/pngs/m/410-4102300_haikyuu-clipart-vector-haikyuu-chibi-hd-png-download.png" alt="kenma">
                 </div>
                 <div class="col-lg-3">
-                    <img class="hinata" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Orange_question_mark.svg/2048px-Orange_question_mark.svg.png" data-alt-src="https://w7.pngwing.com/pngs/10/671/png-transparent-hinata-hyuga-shoyo-hinata-anime-chibi-haikyu-haikyuu-manga-computer-wallpaper-fictional-character.png" alt="hinata">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Orange_question_mark.svg/2048px-Orange_question_mark.svg.png" data-alt-src="https://w7.pngwing.com/pngs/10/671/png-transparent-hinata-hyuga-shoyo-hinata-anime-chibi-haikyu-haikyuu-manga-computer-wallpaper-fictional-character.png" alt="hinata">
                 </div>
                 <div class="col-lg-3">
-                    <img class="kenma" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Orange_question_mark.svg/2048px-Orange_question_mark.svg.png" data-alt-src="https://www.pngfind.com/pngs/m/410-4102300_haikyuu-clipart-vector-haikyuu-chibi-hd-png-download.png" alt="kenma">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Orange_question_mark.svg/2048px-Orange_question_mark.svg.png" data-alt-src="https://www.pngfind.com/pngs/m/410-4102300_haikyuu-clipart-vector-haikyuu-chibi-hd-png-download.png" alt="kenma">
                 </div>
                 <div class="col-lg-3">
-                    <img class="hinata" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Orange_question_mark.svg/2048px-Orange_question_mark.svg.png" data-alt-src="https://w7.pngwing.com/pngs/10/671/png-transparent-hinata-hyuga-shoyo-hinata-anime-chibi-haikyu-haikyuu-manga-computer-wallpaper-fictional-character.png" alt="hinata">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Orange_question_mark.svg/2048px-Orange_question_mark.svg.png" data-alt-src="https://w7.pngwing.com/pngs/10/671/png-transparent-hinata-hyuga-shoyo-hinata-anime-chibi-haikyu-haikyuu-manga-computer-wallpaper-fictional-character.png" alt="hinata">
                 </div>
                 <div class="col-lg-3">
-                    <img class="suga" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Orange_question_mark.svg/2048px-Orange_question_mark.svg.png" data-alt-src="https://ih1.redbubble.net/image.1780518069.5861/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="sugawara">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Orange_question_mark.svg/2048px-Orange_question_mark.svg.png" data-alt-src="https://ih1.redbubble.net/image.1780518069.5861/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="sugawara">
                 </div>
                 <div class="col-lg-3">
-                    <img class="bokuto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Orange_question_mark.svg/2048px-Orange_question_mark.svg.png" data-alt-src="https://preview.redd.it/5gpjsay1uy871.jpg?width=640&crop=smart&auto=webp&s=5eb583279aa96dd3d7a87173cb0bffecbcfc62d6" alt="bokuto">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Orange_question_mark.svg/2048px-Orange_question_mark.svg.png" data-alt-src="https://preview.redd.it/5gpjsay1uy871.jpg?width=640&crop=smart&auto=webp&s=5eb583279aa96dd3d7a87173cb0bffecbcfc62d6" alt="bokuto">
                 </div>
                 <div class="col-lg-3">
-                    <img class="suga" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Orange_question_mark.svg/2048px-Orange_question_mark.svg.png" data-alt-src="https://ih1.redbubble.net/image.1780518069.5861/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="sugawara">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Orange_question_mark.svg/2048px-Orange_question_mark.svg.png" data-alt-src="https://ih1.redbubble.net/image.1780518069.5861/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="sugawara">
                 </div>
                 <div class="col-lg-3">
-                    <img class="bokuto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Orange_question_mark.svg/2048px-Orange_question_mark.svg.png" data-alt-src="https://preview.redd.it/5gpjsay1uy871.jpg?width=640&crop=smart&auto=webp&s=5eb583279aa96dd3d7a87173cb0bffecbcfc62d6" alt="bokuto">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Orange_question_mark.svg/2048px-Orange_question_mark.svg.png" data-alt-src="https://preview.redd.it/5gpjsay1uy871.jpg?width=640&crop=smart&auto=webp&s=5eb583279aa96dd3d7a87173cb0bffecbcfc62d6" alt="bokuto">
                 </div>
                 <div class="col-lg-3">
-                    <img class="bokuto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Orange_question_mark.svg/2048px-Orange_question_mark.svg.png" data-alt-src="https://preview.redd.it/5gpjsay1uy871.jpg?width=640&crop=smart&auto=webp&s=5eb583279aa96dd3d7a87173cb0bffecbcfc62d6" alt="bokuto">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Orange_question_mark.svg/2048px-Orange_question_mark.svg.png" data-alt-src="https://preview.redd.it/5gpjsay1uy871.jpg?width=640&crop=smart&auto=webp&s=5eb583279aa96dd3d7a87173cb0bffecbcfc62d6" alt="bokuto">
                 </div>
                 <div class="col-lg-3">
-                    <img class="suga" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Orange_question_mark.svg/2048px-Orange_question_mark.svg.png" data-alt-src="https://ih1.redbubble.net/image.1780518069.5861/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="sugawara">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Orange_question_mark.svg/2048px-Orange_question_mark.svg.png" data-alt-src="https://ih1.redbubble.net/image.1780518069.5861/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="sugawara">
                 </div>
                 <div class="col-lg-3">
-                    <img class="kenma" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Orange_question_mark.svg/2048px-Orange_question_mark.svg.png" data-alt-src="https://www.pngfind.com/pngs/m/410-4102300_haikyuu-clipart-vector-haikyuu-chibi-hd-png-download.png" alt="kenma">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Orange_question_mark.svg/2048px-Orange_question_mark.svg.png" data-alt-src="https://www.pngfind.com/pngs/m/410-4102300_haikyuu-clipart-vector-haikyuu-chibi-hd-png-download.png" alt="kenma">
                 </div>
                 <div class="col-lg-3">
-                    <img class="hinata" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Orange_question_mark.svg/2048px-Orange_question_mark.svg.png" data-alt-src="https://w7.pngwing.com/pngs/10/671/png-transparent-hinata-hyuga-shoyo-hinata-anime-chibi-haikyu-haikyuu-manga-computer-wallpaper-fictional-character.png" alt="hinata">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Orange_question_mark.svg/2048px-Orange_question_mark.svg.png" data-alt-src="https://w7.pngwing.com/pngs/10/671/png-transparent-hinata-hyuga-shoyo-hinata-anime-chibi-haikyu-haikyuu-manga-computer-wallpaper-fictional-character.png" alt="hinata">
                 </div>
             </main>
         </div>
